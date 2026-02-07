@@ -2,85 +2,97 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
+  <title>Episódios | Histórias ComVoz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Episódios — Histórias ComVoz</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="topo">
-  <div class="topo-inner">
-    <div class="branding">
-      <img src="Imagens/logo-historias-comvoz.jpg" alt="Histórias ComVoz" class="logo">
-      <span class="nome">Histórias ComVoz</span>
-    </div>
-
-    <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="episodios.html" class="ativo">Episódios</a>
-      <a href="contactos.html">Contactos</a>
-    </nav>
-  </div>
+<header>
+  <h1>Episódios</h1>
 </header>
 
-<main class="conteudo">
+<main>
 
-  <h1>Episódios</h1>
-
-  <!-- ========================= -->
-  <!-- EPISÓDIO EM DESTAQUE -->
-  <!-- ========================= -->
-  <section class="secao">
+  <!-- EM DESTAQUE -->
+  <section>
     <h2>Em destaque</h2>
 
-    <div class="cartao-episodio destaque">
-      <h3>Episódio 0 — Apresentação</h3>
-      <p>Apresentação do projeto Histórias ComVoz.</p>
-
-      <div class="spotify-embed">
-  <iframe
-    src="https://open.spotify.com/embed/episode/5MNURbHDiP4IqauhSLfetv/video"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy">
-  </iframe>
-</div>
-
-  <!-- ========================= -->
-  <!-- FUTUROS EPISÓDIOS -->
-  <!-- ========================= -->
-  <section class="secao">
-    <h2>Futuros episódios</h2>
-
-    <div class="cartao-episodio">
-      <h3>Episódio 1 — Professor Joaquim Teixeira</h3>
+    <div class="episodio-card destaque">
+      <h3>Episódio 1 — Joaquim Teixeira</h3>
       <p>
-        Presidente da Mesa da Assembleia Geral da UATI e professor de teatro.
+        Conversa com Joaquim Teixeira, Presidente da Mesa da Assembleia Geral da UATI e professor de teatro.
+        Um encontro sobre percursos de vida, cultura e participação.
+      </p>
+
+      <!-- Spotify -->
+      <div class="spotify-embed">
+        <iframe
+          src="https://open.spotify.com/embed/episode/5YaA2PxHW0FTZEsQCno7TO/video"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Botão YouTube -->
+      <a class="botao botao-youtube"
+         href="https://youtu.be/WbGbafgAd3o"
+         target="_blank" rel="noopener">
+        ▶️ Ver no YouTube
+      </a>
+    </div>
+  </section>
+
+  <!-- PRÓXIMO EPISÓDIO -->
+  <section>
+    <h2>Próximo episódio</h2>
+
+    <div class="episodio-card">
+      <h3>Episódio 2 — Rosa Matias</h3>
+      <p><strong>Vice-Presidente da UATI</strong></p>
+      <p>
+        Um dos principais suportes do funcionamento da UATI.
+        Uma conversa sobre bastidores, dedicação e o trabalho essencial
+        que faz a instituição acontecer todos os dias.
       </p>
       <p><em>Brevemente disponível.</em></p>
     </div>
   </section>
 
-  <!-- ========================= -->
   <!-- EPISÓDIOS PASSADOS -->
-  <!-- ========================= -->
-  <section class="secao">
+  <section>
     <h2>Episódios passados</h2>
 
-    <div class="cartao-episodio">
+    <div class="episodio-card">
       <h3>Episódio 0 — Apresentação</h3>
-      <p>Apresentação do projeto Histórias ComVoz.</p>
+      <p>
+        Episódio de apresentação do podcast Histórias ComVoz,
+        onde se explica a origem e o espírito do projeto.
+      </p>
+
+      <div class="spotify-embed">
+        <iframe
+          src="https://open.spotify.com/embed/episode/5MNURbHDiP4IqauhSLfetv/video"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
     </div>
   </section>
 
 </main>
 
+<!-- RODAPÉ -->
 <footer class="rodape">
-  <p>Histórias ComVoz — UATI · Universidade do Algarve para a Terceira Idade</p>
-  <p>Contacto: <a href="mailto:podcast.historiascomvoz@gmail.com">podcast.historiascomvoz@gmail.com</a></p>
-  <p class="copyright">
-    © 2026 Historias ComVoz- UATI. Todos os direitos reservados.
-  </p>
+  <p><strong>Histórias ComVoz</strong> — UATI · Universidade do Algarve para a Terceira Idade</p>
+  <p>Contacto: podcast.historiascomvoz@gmail.com</p>
+
+  <a class="botao botao-youtube"
+     href="https://www.youtube.com/channel/UCQInFk6W9otHSxdcdfUX-Yg"
+     target="_blank" rel="noopener">
+    ▶️ YouTube — Histórias ComVoz
+  </a>
 </footer>
+
 </body>
 </html>

@@ -350,3 +350,61 @@ body {
   border: 2px solid var(--azul);
   border-radius: 12px;
 }
+/* Episódios */
+
+.episodio-card {
+  background: #ffffff;
+  border: 2px solid #08306f;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.episodio-card.destaque {
+  background: #f6f9ff;
+}
+
+.spotify-embed iframe {
+  width: 100%;
+  height: 360px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+/* Botões */
+
+.botao {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 20px;
+  background-color: #08306f;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #f2b705; /* amarelo UATI */
+  color: #08306f;
+}
+
+.botao-youtube {
+  margin-top: 20px;
+}
+
+/* Rodapé */
+
+.rodape {
+  margin-top: 60px;
+  padding: 32px 20px;
+  background-color: #08306f;
+  color: #ffffff;
+  text-align: center;
+}
+
+.rodape .botao {
+  margin-top: 20px;
+}
