@@ -2,33 +2,48 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Episódios | Histórias ComVoz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episódios | Histórias ComVoz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- CABEÇALHO DA PÁGINA -->
-<header class="pagina-header">
-  <h1>Episódios</h1>
+<header class="topo">
+  <div class="topo-inner">
+    <div class="branding">
+      <img src="Imagens/logo-historias-comvoz.jpg" alt="Histórias ComVoz" class="logo">
+      <span class="nome">Histórias ComVoz</span>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="episodios.html">Episódios</a>
+      <a href="contactos.html">Contactos</a>
+    </nav>
+  </div>
 </header>
 
-<main>
+<main class="conteudo">
+
+  <section class="hero">
+    <h1>Episódios</h1>
+    <p class="subtitulo">
+      Conversas leves. Histórias fortes. Pessoas reais.
+    </p>
+  </section>
 
   <!-- EM DESTAQUE -->
-  <section>
-    <h2>Em destaque</h2>
+  <section class="chamada-final">
+    <div class="caixa-contacto">
+      <h2>Em destaque</h2>
 
-    <div class="episodio-card destaque">
       <h3>Episódio 1 — Joaquim Teixeira</h3>
-
       <p>
         Conversa com Joaquim Teixeira, Presidente da Mesa da Assembleia Geral da UATI
         e professor de teatro. Um encontro sobre percursos de vida, cultura e participação.
       </p>
 
-      <!-- Spotify -->
       <div class="spotify-embed">
         <iframe
           src="https://open.spotify.com/embed/episode/5YaA2PxHW0FTZEsQCno7TO/video"
@@ -37,7 +52,6 @@
         </iframe>
       </div>
 
-      <!-- Botão YouTube -->
       <a class="botao botao-youtube"
          href="https://youtu.be/WbGbafgAd3o"
          target="_blank" rel="noopener">
@@ -47,17 +61,15 @@
   </section>
 
   <!-- PRÓXIMO EPISÓDIO -->
-  <section>
-    <h2>Próximo episódio</h2>
+  <section class="chamada-final">
+    <div class="caixa-contacto">
+      <h2>Próximo episódio</h2>
 
-    <div class="episodio-card">
       <h3>Episódio 2 — Rosa Matias</h3>
       <p><strong>Vice-Presidente da UATI</strong></p>
-
       <p>
-        Um dos principais suportes do funcionamento da UATI.
-        Uma conversa sobre dedicação, bastidores e o trabalho
-        essencial que faz a instituição acontecer todos os dias.
+        Uma conversa sobre dedicação, bastidores e o trabalho essencial
+        que faz a UATI acontecer todos os dias.
       </p>
 
       <p><em>Brevemente disponível.</em></p>
@@ -65,12 +77,11 @@
   </section>
 
   <!-- EPISÓDIOS PASSADOS -->
-  <section>
-    <h2>Episódios passados</h2>
+  <section class="chamada-final">
+    <div class="caixa-contacto">
+      <h2>Episódios passados</h2>
 
-    <div class="episodio-card">
       <h3>Episódio 0 — Apresentação</h3>
-
       <p>
         Episódio de apresentação do podcast Histórias ComVoz,
         onde se explica a origem e o espírito do projeto.
@@ -88,10 +99,13 @@
 
 </main>
 
-<!-- RODAPÉ -->
 <footer class="rodape">
   <p><strong>Histórias ComVoz</strong> — UATI · Universidade do Algarve para a Terceira Idade</p>
   <p>Contacto: podcast.historiascomvoz@gmail.com</p>
+
+<p class="copyright">
+  © 2026 Produção Histórias ComVoz para a UATI · Todos os direitos reservados
+</p>
 
   <a class="botao botao-youtube"
      href="https://www.youtube.com/channel/UCQInFk6W9otHSxdcdfUX-Yg"

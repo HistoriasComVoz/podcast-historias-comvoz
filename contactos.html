@@ -6,6 +6,7 @@
   <title>Contactos | Histórias ComVoz</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="topo">
@@ -27,63 +28,71 @@
 
   <h1>Contactos</h1>
 
-  <!-- CAIXA: COORDENAÇÃO -->
-  <div class="cartao-contacto">
+  <!-- COORDENAÇÃO DO PODCAST -->
+  <section class="contacto-card">
     <h2>Coordenação do Podcast</h2>
 
-    <p><strong>Historias ComVoz</strong></p>
-    <p>📞 <a href="tel:964846265">964 846 265</a></p>
-    <p>✉️ <a href="mailto:podcast.historiascomvoz@gmail.com">podcast.historiascomvoz@gmail.com</a></p>
-  </div>
-
-  <!-- CAIXA: UATI -->
-  <div class="cartao-contacto">
-    <h2>UATI — Universidade do Algarve para a Terceira Idade</h2>
+    <p><strong>Histórias ComVoz</strong></p>
 
     <p>
-      📍 <strong>Secretaria:</strong>
-      <a href="https://www.google.com/maps/search/?api=1&query=Praceta+Salgueiro+Maia+Bloco+J+Faro"
-         target="_blank">
-        Praceta Salgueiro Maia, Bloco J – Faro
+      📞 <a href="tel:+351964846265">964 846 265</a><br>
+      ✉️ <a href="mailto:podcast.historiascomvoz@gmail.com">
+        podcast.historiascomvoz@gmail.com
+      </a>
+    </p>
+  </section>
+
+  <!-- UATI -->
+  <section class="contacto-card">
+    <h2>UATI — Universidade do Algarve para a Terceira Idade</h2>
+
+    <p><strong>Universidade do Algarve</strong></p>
+    <p>Campus de Gambelas — Faro</p>
+
+    <p>
+      📍 <a href="https://maps.google.com/?q=Campus+de+Gambelas+Faro"
+           target="_blank" rel="noopener">
+        Ver no Google Maps
       </a>
     </p>
 
-    <p>☎️ <strong>Telefone:</strong> <a href="tel:289826884">289 826 884</a></p>
-    <p>📱 <strong>Telemóvel:</strong> <a href="tel:925980106">925 980 106</a></p>
-    <p>✉️ <strong>Email:</strong>
-      <a href="mailto:uati-faro-dir@sapo.pt">uati-faro-dir@sapo.pt</a>
+    <p>
+      📞 <a href="tel:+351289826884">289 826 884</a><br>
+      📱 <a href="tel:+351925980106">925 980 106</a><br>
+      ✉️ <a href="mailto:uati-faro-dir@sapo.pt">uati-faro-dir@sapo.pt</a>
     </p>
 
     <p>
-      🔗 <a href="https://www.facebook.com/profile.php?id=100064614619644"
-           target="_blank">
+      🔗 <a href="https://www.facebook.com/UATI.UAlg"
+           target="_blank" rel="noopener">
         Página oficial da UATI no Facebook
       </a>
     </p>
-  </div>
+  </section>
 
   <!-- FORMULÁRIO -->
-  <div class="cartao-contacto formulario">
+  <section class="contacto-card">
     <h2>Envie-nos uma mensagem</h2>
 
-    <form action="https://formspree.io/f/xnjbaloq" method="POST">
+    <form action="https://formspree.io/f/xnjbaloq" method="POST" class="formulario">
+      <label>
+        Nome
+        <input type="text" name="nome" required>
+      </label>
 
-  <label>Nome</label>
-  <input type="text" name="name" required>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
 
-  <label>Email</label>
-  <input type="email" name="email" required>
+      <label>
+        Mensagem
+        <textarea name="mensagem" rows="5" required></textarea>
+      </label>
 
-  <label>Mensagem</label>
-  <textarea name="message" required></textarea>
-
-  <!-- anti-spam -->
-  <input type="text" name="_gotcha" style="display:none">
-
-  <button type="submit">Enviar mensagem</button>
-</form>
-
-  </div>
+      <button type="submit" class="botao">Enviar mensagem</button>
+    </form>
+  </section>
 
 </main>
 
@@ -91,12 +100,16 @@
   <p><strong>Histórias ComVoz</strong> — UATI · Universidade do Algarve para a Terceira Idade</p>
   <p>Contacto: podcast.historiascomvoz@gmail.com</p>
 
+<p class="copyright">
+  © 2026 Produção Histórias ComVoz para a UATI · Todos os direitos reservados
+</p>
+
   <a class="botao botao-youtube"
      href="https://www.youtube.com/channel/UCQInFk6W9otHSxdcdfUX-Yg"
      target="_blank" rel="noopener">
     ▶️ YouTube — Histórias ComVoz
   </a>
-</footer>
+  </footer
 
 </body>
 </html>
