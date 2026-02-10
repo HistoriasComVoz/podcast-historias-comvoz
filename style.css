@@ -229,3 +229,22 @@ main > .episodio-card:last-child {
 footer.rodape {
   margin-top: 30px;
 }
+/* AJUSTES MOBILE – MENU */
+@media (max-width: 768px) {
+
+  .topo-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+}
