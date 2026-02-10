@@ -249,8 +249,7 @@ footer.rodape {
     justify-content: center;
     gap: 8px;
     width: 100%;
-    flex-wrap: nowrap; /* ISTO é importante */
-  }
+    flex-wrap: nowrap; 
 
   .menu a {
   background: #ffffff;
