@@ -247,20 +247,21 @@ footer.rodape {
   .menu {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* ISTO é importante */
   }
 
   .menu a {
-    background: #ffffff;
-    color: var(--azul);
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 0.95rem;
-    text-decoration: none;
-  }
+  background: #ffffff;
+  color: var(--azul);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
   .menu a:hover {
     background: var(--amarelo);
