@@ -266,3 +266,27 @@ footer.rodape {
     background: var(--amarelo);
     color: #000;
   }
+  /* MOBILE — caixa dos botões do menu */
+@media (max-width: 768px) {
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    margin-top: 15px;
+
+    border: 2px solid var(--amarelo);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .menu a {
+    background: #fff;
+    color: var(--azul);
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
