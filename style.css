@@ -255,4 +255,32 @@ footer.rodape {
   white-space: nowrap;
 }
 
+}/* ============================
+   MENU — AJUSTE PARA MOBILE
+   ============================ */
+@media (max-width: 768px) {
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    flex-wrap: nowrap;              /* NÃO deixa quebrar linha */
+    border-bottom: 2px solid var(--amarelo);
+  }
+
+  .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+
+    font-size: 0.9rem;              /* cabe no ecrã */
+    padding: 6px 8px;
+
+    white-space: nowrap;            /* texto nunca parte */
+  }
+
 }
