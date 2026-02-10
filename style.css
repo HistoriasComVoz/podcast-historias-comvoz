@@ -229,7 +229,7 @@ main > .episodio-card:last-child {
 footer.rodape {
   margin-top: 30px;
 }
-/* MOBILE — caixa dos botões do menu */
+//* MOBILE — caixa dos botões do menu */
 @media (max-width: 768px) {
 
   .menu {
@@ -252,4 +252,5 @@ footer.rodape {
     font-weight: bold;
     text-decoration: none;
   }
+
 }
