@@ -245,12 +245,14 @@ footer.rodape {
   }
 
   .menu a {
-    background: #fff;
-    color: var(--azul);
-    padding: 10px 16px;
-    border-radius: 10px;
-    font-weight: bold;
-    text-decoration: none;
-  }
+  background: #ffffff;
+  color: var(--azul);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
 }
