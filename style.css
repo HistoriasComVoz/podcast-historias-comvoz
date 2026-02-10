@@ -229,36 +229,15 @@ main > .episodio-card:last-child {
 footer.rodape {
   margin-top: 30px;
 }
-//* MOBILE — caixa dos botões do menu */
-@media (max-width: 768px) {
-
-  .menu {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px;
-    margin-top: 15px;
-
-    border: 2px solid var(--amarelo);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.08);
-  }
-
-  .menu a {
-  background: #ffffff;
-  color: var(--azul);
-  padding: 8px 10px;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 0.85rem;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-}/* ============================
-   MENU — AJUSTE PARA MOBILE
+/* ============================
+   MENU MOBILE — VERSÃO FINAL
    ============================ */
 @media (max-width: 768px) {
+
+  .topo-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
 
   .menu {
     display: flex;
@@ -266,21 +245,25 @@ footer.rodape {
     align-items: center;
     gap: 12px;
 
-    padding: 10px 12px;
+    padding: 10px 14px;
 
-    flex-wrap: nowrap;              /* NÃO deixa quebrar linha */
-    border-bottom: 2px solid var(--amarelo);
+    border: 2px solid var(--amarelo);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
   }
 
   .menu a {
-    color: #ffffff;
+    background: #ffffff;
+    color: var(--azul);
+
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    font-weight: bold;
+    font-size: 0.9rem;
     text-decoration: none;
-    font-weight: 600;
 
-    font-size: 0.9rem;              /* cabe no ecrã */
-    padding: 6px 8px;
-
-    white-space: nowrap;            /* texto nunca parte */
+    white-space: nowrap;
   }
 
 }
