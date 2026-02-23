@@ -1,18 +1,24 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* CORES */
+/* =========================
+   CORES
+========================= */
 :root {
   --azul: #0b3c88;
   --amarelo: #f2c300;
   --cinza: #f5f7fa;
 }
 
-/* BASE */
+/* =========================
+   BASE
+========================= */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #fff;
@@ -20,7 +26,9 @@ body {
   line-height: 1.6;
 }
 
-/* TOPO */
+/* =========================
+   TOPO / MENU
+========================= */
 .topo {
   background: var(--azul);
   padding: 20px 0;
@@ -51,59 +59,36 @@ body {
   font-weight: bold;
 }
 
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
 .menu a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 20px;
 }
 
 .menu a:hover {
   text-decoration: underline;
 }
 
-/* CONTEÚDO */
+/* =========================
+   CONTEÚDO GERAL
+========================= */
 .conteudo {
   max-width: 1100px;
   margin: 50px auto;
   padding: 0 20px;
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  color: var(--azul);
-  margin-bottom: 10px;
-}
-
-.subtitulo {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.descricao {
-  max-width: 700px;
-  margin: 0 auto 20px;
-}
-
-.assinatura {
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-.botoes-hero .botao {
-  margin-top: 20px;
-}
-
-/* BOTÕES */
+/* =========================
+   BOTÕES
+========================= */
 .botao {
   display: inline-block;
-  padding: 12px 22px;
+  padding: 10px 18px;
   background: var(--azul);
   color: #fff;
   border-radius: 6px;
@@ -111,26 +96,156 @@ body {
   font-weight: bold;
 }
 
-.botao:hover {
-  opacity: 0.9;
-}
-
-.botao-contactos {
-  background: var(--amarelo);
-  color: #000;
-}
-
 .botao-youtube {
-  background: var(--azul);
   border: 2px solid var(--amarelo);
 }
 
-/* BLOCOS */
+.botao-spotify {
+  background: var(--azul);
+  color: #fff;
+  border: 2px solid var(--amarelo);
+}
+
+/* =========================
+   ARQUIVO DE EPISÓDIOS
+========================= */
+
+/* Título */
+.titulo-arquivo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Linha após o título */
+.linha-arquivo {
+  border: none;
+  border-top: 2px solid #ccc;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+/* Lista */
+.arquivo-lista {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Item */
+.arquivo-item {
+  padding: 25px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Linha final após episódio 0 */
+.arquivo-item:last-child {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 30px;
+}
+
+/* Info */
+.arquivo-info h3 {
+  color: var(--azul);
+  margin-bottom: 6px;
+}
+
+.arquivo-info p {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Botões */
+.arquivo-botoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+.rodape {
+  background: var(--azul);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.rodape a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .topo-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .arquivo-botoes {
+    justify-content: flex-start;
+  }
+
+}/* =========================
+   INDEX — HERO
+========================= */
+
+.hero {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+
+.hero .subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .descricao {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.hero .assinatura {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   INDEX — BOTÕES HERO
+========================= */
+
+.botoes-hero {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* =========================
+   INDEX — BLOCOS
+========================= */
+
 .blocos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  margin-bottom: 60px;
+  margin: 60px 0;
 }
 
 .bloco {
@@ -141,165 +256,253 @@ body {
   text-align: center;
 }
 
-/* CHAMADA FINAL */
+/* =========================
+   INDEX — CHAMADA FINAL
+========================= */
+
 .chamada-final {
   display: flex;
   justify-content: center;
+  margin: 60px 0;
 }
 
 .caixa-contacto {
   max-width: 700px;
-  margin: 30px auto;        /* controla a distância entre caixas */
   border: 2px solid var(--azul);
   border-radius: 12px;
   padding: 30px;
   text-align: center;
-  background: var(--cinza-claro);
+  background: var(--cinza);
 }
+/* =========================
+   EPISÓDIOS — TÍTULO
+========================= */
 
-/* RODAPÉ */
-.rodape {
-  background: var(--azul);
-  color: #fff;
+.titulo-episodios {
   text-align: center;
-  padding: 30px 20px;
-  margin-top: 60px;
+  font-size: 2.4rem;
+  color: var(--azul);
+  margin-bottom: 50px;
 }
 
-.rodape a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
+/* =========================
+   EPISÓDIOS — ÁREA GERAL
+========================= */
 
-.rodape a:hover {
-  text-decoration: underline;
-}
-.caixa-contacto form {
+.episodios-destaque {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 40px; /* espaço entre as caixas */
 }
 
-.caixa-contacto input,
-.caixa-contacto textarea {
+/* =========================
+   EPISÓDIOS — CAIXAS
+========================= */
+
+.episodio-card {
   width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+  max-width: 900px;
+
+  background: var(--cinza);
+  border: 2px solid var(--azul);
+  border-radius: 14px;
+
+  padding: 30px;
 }
-footer .copyright {
+
+.episodio-card h2 {
+  text-align: center;
+  color: var(--azul);
+  margin-bottom: 20px;
+}
+
+.episodio-card h3 {
+  margin-bottom: 10px;
+}
+
+.episodio-card p {
+  margin-bottom: 15px;
+}
+
+/* Destaque com reforço visual */
+.episodio-card.destaque {
+  border-width: 3px;
+}
+
+/* Próximo episódio ligeiramente mais discreto */
+.episodio-card.proximo {
+  background: #ffffff;
+}
+/* Botões dentro dos episódios */
+.episodio-botoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.botao-spotify {
+  background: #1DB954;
+  color: #000;
+  font-weight: bold;
+}
+    
+/* =========================
+   PÁGINA EPISÓDIOS
+   ========================= */
+
+.titulo-episodios {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--azul);
+}
+
+.episodios-wrapper {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* espaço entre caixas */
+}
+
+.episodio-card {
+  border: 2px solid var(--azul);
+  border-radius: 16px;
+  padding: 30px;
+  background: var(--cinza);
+}
+
+.episodio-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--azul);
+}
+
+.episodio-card h3 {
+  margin-bottom: 10px;
+}
+
+.episodio-card p {
+  margin-bottom: 15px;
+}
+
+.episodio-botoes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   margin-top: 10px;
-  font-size: 0.9rem;
-  opacity: 0.9;
 }
+
+/* Spotify — UATI */
+.botao-spotify {
+  background: var(--azul);
+  color: #fff;
+  border: 2px solid var(--amarelo);
+}
+/* CONTACTOS */
+
+.titulo-contactos {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--azul);
+}
+
 .contacto-card {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 30px;
   border: 2px solid var(--azul);
   border-radius: 12px;
-  padding: 30px;
-  margin: 30px auto;
+  background: var(--cinza);
+}
+
+.contacto-card h2 {
+  margin-bottom: 15px;
+  color: var(--azul);
+}
+
+.contacto-card p {
+  margin-bottom: 10px;
+}
+
+.contacto-card a {
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contacto-card a:hover {
+  textذك-decoration: underline;
+}
+/* CONTACTOS */
+
+.titulo-contactos {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--azul);
+}
+
+.contacto-card {
   max-width: 800px;
-  background: var(--cinza-claro);
+  margin: 0 auto 30px;
+  padding: 30px;
+  border: 2px solid var(--azul);
+  border-radius: 12px;
+  background: var(--cinza);
+}
+
+.contacto-card h2 {
+  margin-bottom: 15px;
+  color: var(--azul);
+}
+
+.contacto-card p {
+  margin-bottom: 10px;
+}
+
+.contacto-card a {
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contacto-card a:hover {
+  textذك-decoration: underline;
+}
+/* FORMULÁRIO DE CONTACTO — VERSÃO LIMPA */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formulario .campo {
+  display: flex;
+  flex-direction: column;
 }
 
 .formulario label {
-  display: block;
-  margin-bottom: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
 }
 
 .formulario input,
 .formulario textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-}
-/* AJUSTE GLOBAL DO FUNDO DAS PÁGINAS */
-main {
-  margin-bottom: 30px; /* antes estava grande demais */
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-/* ÚLTIMO BLOCO ANTES DO FOOTER */
-main > section:last-child,
-main > .episodio-card:last-child {
-  margin-bottom: 20px;
+.formulario textarea {
+  resize: vertical;
 }
 
-/* FOOTER MAIS PRÓXIMO DO CONTEÚDO */
-footer.rodape {
-  margin-top: 30px;
-}
-/* ============================
-   MENU MOBILE — VERSÃO FINAL
-   ============================ */
-@media (max-width: 768px) {
-
-  .topo-inner {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-
-    padding: 10px 14px;
-
-    border: 2px solid var(--amarelo);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.08);
-  }
-
-  .menu a {
-    background: #ffffff;
-    color: var(--azul);
-
-    padding: 8px 12px;
-    border-radius: 6px;
-
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-decoration: none;
-
-    white-space: nowrap;
-  }
-
-/* ARQUIVO — LISTA DE EPISÓDIOS */
-
-.arquivo-lista {
-  max-width: 900px;
-  margin: 50px auto;
-}
-
-.arquivo-item {
-  padding: 25px 0;              /* MAIS espaço vertical */
-  margin-bottom: 20px;          /* separação extra */
-  border-bottom: 2px solid #ddd;/* linha bem visível */
-}
-
-.arquivo-item:last-child {
-  border-bottom: none;
-}
-
-.arquivo-item h3 {
-  margin-bottom: 6px;
-  color: var(--azul);
-}
-
-.arquivo-item p {
-  margin-bottom: 12px;
-  color: #333;
-}
-
-.arquivo-item .botoes-arquivo {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.botao-arquivo {
-  background: transparent;
-  color: var(--azul);
-  border: 2px solid var(--azul);
+.formulario button {
+  align-self: center;
+  margin-top: 10px;
 }
