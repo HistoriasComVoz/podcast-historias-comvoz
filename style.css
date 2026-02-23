@@ -266,4 +266,40 @@ footer.rodape {
     white-space: nowrap;
   }
 
+/* ARQUIVO — LISTA DE EPISÓDIOS */
+
+.arquivo-lista {
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.arquivo-item {
+  padding: 25px 0;              /* MAIS espaço vertical */
+  margin-bottom: 20px;          /* separação extra */
+  border-bottom: 2px solid #ddd;/* linha bem visível */
+}
+
+.arquivo-item:last-child {
+  border-bottom: none;
+}
+
+.arquivo-item h3 {
+  margin-bottom: 6px;
+  color: var(--azul);
+}
+
+.arquivo-item p {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.arquivo-item .botoes-arquivo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.botao-arquivo {
+  background: transparent;
+  color: var(--azul);
+  border: 2px solid var(--azul);
 }
